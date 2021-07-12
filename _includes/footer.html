@@ -1,0 +1,26 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <ul class="contact-list">
+      <li class="p-name">
+        {%- if site.author -%}
+        {{ site.author | escape }} – all rights reserved.
+        {%- else -%}
+        {{ site.title | escape }} – all rights reserved.
+        {%- endif -%}
+      </li>
+      {%- if site.email -%}
+      <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {%- endif -%}
+    </ul>
+
+    <div class="social">
+      {%- include social.html -%}
+    </div>
+  </div>
+
+  </div>
+
+</footer>
