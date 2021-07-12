@@ -3,9 +3,12 @@
  */
 .site-header {
   padding-top: 30px;
-  padding-bottom: 20px;
   margin-bottom: 30px;
   min-height: $spacing-unit * 1.865;
+
+  @include media-query($on-palm) {
+    margin-bottom: 0;
+  }
 }
 
 .site-title {
