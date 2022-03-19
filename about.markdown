@@ -4,8 +4,4 @@ title: About
 permalink: /about/
 ---
 
-{{ site.author | escape }} – Software Engineer
-
-I'm a software engineer from Germany interested in Java, Kotlin and JVM topics.
-I have worked on JavaFX and Android projects before but lately shifted my focus
-to backend technologies.
+I'm {{ site.author | escape }} from Germany and I do software engineering for a living. On this site I write about Java, Kotlin, JVM and Android topics.
