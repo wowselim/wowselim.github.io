@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Streaming Zip Archives to the Browser using Vert.x & Coroutines"
-date:   2021-05-31
+date:   2022-09-05
 tags: vert.x kotlin async coroutines
 ---
 
