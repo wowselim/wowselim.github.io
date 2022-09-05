@@ -104,3 +104,5 @@ private fun ByteArrayOutputStream.toBuffer(): Buffer {
   return Buffer.buffer(toByteArray())
 }
 ```
+
+You can find a repo with a working example [here](https://github.com/wowselim/zip-streaming).
