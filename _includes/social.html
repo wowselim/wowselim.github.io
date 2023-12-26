@@ -1,5 +1,27 @@
 <ul class="social-media-list">
-  {%- if site.github_username -%}<li><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" rel="noopener noreferrer"><span class="username">{{ site.github_username| escape }}</span></a></li>{%- endif -%}
-  {%- if site.twitter_username -%}<li><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" rel="noopener noreferrer"><span class="username">{{ site.twitter_username| escape }}</span></a></li>{%- endif -%}
-  {%- if site.rss -%}<li><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <a href="{{ 'feed.xml' | relative_url }}" rel="noopener noreferrer"><span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
+  {%- if site.github_username -%}
+  <li>
+    <svg class="svg-icon">
+      <use
+        xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"
+      ></use>
+    </svg>
+    <a
+      href="https://github.com/{{ site.github_username| cgi_escape | escape }}"
+      rel="noopener noreferrer"
+      ><span class="username">{{ site.github_username| escape }}</span></a
+    >
+  </li>
+  {%- endif -%} {%- if site.rss -%}
+  <li>
+    <svg class="svg-icon">
+      <use
+        xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"
+      ></use>
+    </svg>
+    <a href="{{ 'feed.xml' | relative_url }}" rel="noopener noreferrer"
+      ><span>{{ site.rss | escape }}</span></a
+    >
+  </li>
+  {%- endif -%}
 </ul>
