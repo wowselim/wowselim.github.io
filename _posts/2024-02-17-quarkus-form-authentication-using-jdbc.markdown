@@ -21,7 +21,7 @@ Here's how to get form authentication working using plain JDBC.
 
 Let's first get the config out of the way:
 
-```
+```properties
 quarkus.http.auth.form.enabled=true
 quarkus.http.auth.form.username-parameter=email
 quarkus.http.auth.form.password-parameter=password
@@ -44,7 +44,7 @@ named `email` and `password`.
 Let's set up our database with a user account next:
 
 ```sql
-create table account(
+create table account (
   id bigserial primary key,
   email text unique,
   password text,
