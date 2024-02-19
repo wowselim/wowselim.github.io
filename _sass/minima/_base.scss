@@ -263,9 +263,6 @@ table {
     background-color: $grey-color-light;
     border-radius: 20px;
     background-color: black;
-  }
-
-  .tag + .tag {
-    margin-inline-start: 7px;
+    font-family: monospace;
   }
 }
